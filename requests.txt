@@ -1,0 +1,6 @@
+POST http://localhost:5000/country
+Content-Type: application/json
+
+{
+    "address": "83.201.225.105"
+}
