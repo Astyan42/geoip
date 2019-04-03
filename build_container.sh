@@ -2,10 +2,10 @@
 main=${PWD##*/}
 docker pull golang:stretch
 docker run --rm \
-    -e GOCACHE=off -e GOOS=linux -e GOARCH=amd64 \
-    -u `id -u` -v "`pwd`:/go/src/$main" \
+    -e GOOS=linux -e GOARCH=amd64 \
+    -v "`pwd`:/opt/$main" \
     golang:stretch \
-    /bin/sh -c "cd /go/src/$main && ./update_dependencies.sh && ./run_unit_tests.sh && go build -a -x -race"
+    /bin/sh -c "cd /opt/$main && ./run_unit_tests.sh && go build -a -x -race"
 if [ ! -f Dockerfile ]
 then
     cat <<EOF > Dockerfile

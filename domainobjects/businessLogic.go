@@ -1,6 +1,6 @@
 package domainobjects
 
-import "geoip/domainobjects/models"
+import "github.com/renaudcalmont/geoip/domainobjects/models"
 
 type BusinessLogic interface {
 	RetrieveCountryFromIPAddress(ipAddress string) (models.Country, error)

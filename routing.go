@@ -1,8 +1,8 @@
 package main
 
 import (
-	"geoip/domainobjects"
-	"geoip/endpoints"
+	"github.com/renaudcalmont/geoip/domainobjects"
+	"github.com/renaudcalmont/geoip/endpoints"
 	"net/http"
 )
 

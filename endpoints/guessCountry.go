@@ -2,11 +2,11 @@ package endpoints
 
 import (
 	"encoding/json"
-	"geoip/domainobjects/usecases"
+	"github.com/renaudcalmont/geoip/domainobjects"
 	"net/http"
 )
 
-func GuessCountry(businessLogic usecases.BusinessLogicForGuessCountry) http.HandlerFunc {
+func GuessCountry(businessLogic domainobjects.BusinessLogic) http.HandlerFunc {
 	type requestBody struct {
 		Address string
 	}

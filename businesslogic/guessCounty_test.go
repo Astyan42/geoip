@@ -1,7 +1,7 @@
 package businesslogic
 
 import (
-	"geoip/businesslogic/mocks"
+	"github.com/renaudcalmont/geoip/businesslogic/mocks"
 	"testing"
 )
 

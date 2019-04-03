@@ -1,7 +1,7 @@
 package domainobjects
 
 import (
-	"geoip/domainobjects/models"
+	"github.com/renaudcalmont/geoip/domainobjects/models"
 	"net"
 )
 

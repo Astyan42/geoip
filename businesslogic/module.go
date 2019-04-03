@@ -2,8 +2,8 @@ package businesslogic
 
 import (
 	"errors"
-	"geoip/domainobjects"
-	"geoip/domainobjects/models"
+	"github.com/renaudcalmont/geoip/domainobjects"
+	"github.com/renaudcalmont/geoip/domainobjects/models"
 	"net"
 )
 

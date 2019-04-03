@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"geoip/businesslogic"
-	"geoip/repository"
+	"github.com/renaudcalmont/geoip/businesslogic"
+	"github.com/renaudcalmont/geoip/repository"
 	"log"
 	"net/http"
 )
